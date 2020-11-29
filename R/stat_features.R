@@ -55,7 +55,11 @@ stat_features = function(x, sampling_rate){
   etp = Entropy(na.omit(x))
   perm_etp = permutation_entropy(ordinal_pattern_distribution(x,ndemb = 3))
 
+  a<-synth(f=8000,d=1,cf=2000,plot=FALSE)
+  speca<-spec(a,f=8000,at=0.5,plot=FALSE)
+  sfm(speca)
 
+  xx = dfreq(a, f = 8000,plot = TRUE)
 
 
 }

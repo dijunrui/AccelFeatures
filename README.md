@@ -38,20 +38,20 @@ The package contains the following features
 
 ## Frequency domain 
 
-* dominant frequency
+* __dominant frequency__
 
-* dominant frequency magnitude
+* __dominant frequency magnitude__
 
-* spectral flatness
+* __spectral flatness__
 
-* spectral entropy
+* __spectral entropy__
 
 ## Signal smoothness
 
-* jerk
+* __jerk__
 
-* sparc
+* __sparc__
 
-* dimensionless jerk
+* __dimensionless jerk__
 
-* log dimensionless jerk
+* __log dimensionless jerk__
