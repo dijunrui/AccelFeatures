@@ -19,7 +19,10 @@ The package contains the following features
 
 * ratio_beyond_r_sigma
 
+
 ## Time series summary
+
+* Slope for linear trend
 
 * autogressive coefficient lag 1
 
