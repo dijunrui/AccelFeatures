@@ -35,7 +35,7 @@ stat_features = function(x, sampling_rate){
   iqr = IQR(x, na.rm = T)
   skw = skewness(x, na.rm = T)
   kurt = kurtosis(x, na.rm = T)
-  ratio_beyond_r_sig = sum(abs(x - mu) > rms)/n
+  ratio_beyond_r_sig = sum(abs(x - mu) > r * rms)/n
 
 
   # linear trend
