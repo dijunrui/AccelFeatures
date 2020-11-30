@@ -8,7 +8,9 @@
 #'
 #' @importFrom e1071 skewness kurtosis
 #' @importFrom pracma linspace
-#' @importFrom DescTools
+#' @importFrom DescTools entropy
+#' @importFrom statcomp permutation_entropy
+#' @importFrom TSEntropies SampEn_C
 #'
 #' @return A list with elements
 #' \item{mes}{MESOR which is short for midline statistics of rhythm, which is a rhythm adjusted mean. This represents mean activity level.}
@@ -54,12 +56,17 @@ stat_features = function(x, sampling_rate){
   # entropy
   etp = Entropy(na.omit(x))
   perm_etp = permutation_entropy(ordinal_pattern_distribution(x,ndemb = 3))
+  samp_etp = SampEn_C(x)
 
-  a<-synth(f=8000,d=1,cf=2000,plot=FALSE)
-  speca<-spec(a,f=8000,at=0.5,plot=FALSE)
-  sfm(speca)
+  # Frequency domain
+  spec_x = meanspec(x, f = sampling_rate, plot = F,norm = F)
+  dom_freq_mag = max(spec_x[,2])
+  dom_freq = spec_x[which.max(spec_x[,2]),1] * 1000
+  flatness =  sfm(spec_x)
+  spec_entropy = sh(spec_x)
 
-  xx = dfreq(a, f = 8000,plot = TRUE)
+  # smoothness
+
 
 
 }

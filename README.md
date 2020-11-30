@@ -34,6 +34,8 @@ The package contains the following features
 
 * __entropy__
 
+* __sample entropy__
+
 * __permutation entropy__
 
 ## Frequency domain 
