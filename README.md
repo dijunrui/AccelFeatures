@@ -7,48 +7,53 @@ The package contains the following features
 
 ## Summary Statististics
 
-* mean
+* __Mean__
 
-* standard deviation (a.k.a root mean square)
+* __standard deviation__ (a.k.a __root mean square__)
 
-* inter-quartile range
+* __inter-quartile range__
 
-* skewness
+* __skewness__
 
-* kurtosis
+* __kurtosis__
 
-* ratio_beyond_r_sigma
+* __ratio_beyond_r_sigma__: percent of observation that is outside r standard deviations
+
 
 ## Time series summary
 
-* autogressive coefficient lag 1
+* __Slope for linear trend__
 
-* autocorrelation lag 1
+* __autogressive coefficient__ lag 1
 
-* mean cross rate
+* __autocorrelation lag__ 1
+
+* __mean cross rate__ 
 
 ## Information theory
 
-* entropy
+* __entropy__
 
-* permutation entropy
+* __sample entropy__
+
+* __permutation entropy__
 
 ## Frequency domain 
 
-* dominant frequency
+* __dominant frequency__
 
-* dominant frequency magnitude
+* __dominant frequency magnitude__
 
-* spectral flatness
+* __spectral flatness__
 
-* spectral entropy
+* __spectral entropy__
 
 ## Signal smoothness
 
-* jerk
+* __jerk__
 
-* sparc
+* __sparc__
 
-* dimensionless jerk
+* __dimensionless jerk__
 
-* log dimensionless jerk
+* __log dimensionless jerk__
