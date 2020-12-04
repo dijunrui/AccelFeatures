@@ -21,9 +21,7 @@
 #'
 #'
 #' @export
-#' @examples
-#' count1 = c(t(example_activity_data$count[1,-c(1,2)]))
-#' cos_coeff = ActCosinor(x = count1, window = 1)
+
 
 
 freq_feat = function(x, sampling_rate){

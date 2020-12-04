@@ -16,19 +16,17 @@
 #'
 #'
 #' @export
-#' @examples
-#' count1 = c(t(example_activity_data$count[1,-c(1,2)]))
-#' cos_coeff = ActCosinor(x = count1, window = 1)
+
 
 
 trend_feat = function(x, sampling_rate){
 
 
   n = length(x)
-
+  mu = mean(x,na.rm = T)
   # linear trend
   t = linspace(0, n / sampling_rate, n)
-  slope = lm(x~t)$coeffcoefficients[2]
+  slope = lm(x~t)$coefficients[2]
 
   # autoregression and autocorrealtion
   ar1 = ar(x,aic = F, order.max = 1)$ar
